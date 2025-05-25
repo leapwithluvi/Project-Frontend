@@ -1,59 +1,103 @@
 body {
-    background-color: #424242;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background-image: url("/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .todo-wrapper {
+    align-items: center;
     margin-top: 50px;
-    background-color: white;
+    background-color: aliceblue;
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
-    /* font-weight: 450; */
+    font-weight: 250;
 }
 
-.todo-wrapper h1 {
+.todo-wrapper h2 {
     margin: 0;
 }
 
 .todo-wrapper p {
     font-style: italic;
-    color: #424242;
+    color: grey;
     margin: 5px 0;
 }
 
 .todo-wrapper ol {
-    margin: 20px 0 ;
+    margin: 20px 0;
+
 }
 
 .todo-wrapper ol li {
-    margin: 5px 0 ;
+    margin: 5px 0;
     padding: 3px;
     transition: all 0.5s ease-out;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .todo-wrapper form {
     display: inline-block;
 }
 
-.todo-wrapper  input {
-    padding: 3px 5px;
+.todo-wrapper input {
+    padding: 2px 5px;
 }
 
 .todo-wrapper .pretty-button:hover {
     cursor: pointer;
-    opacity: 0,7;
+    opacity: 0.7;
 }
 
 .todo-wrapper .pretty-button {
-    margin: 10px 2px;
+    margin: 10px 20px;
     color: white;
-    background-color: #424242;
+    background-color: rgb(113, 202, 72);
     border-radius: 15px;
-    padding: 5px 20px;
-    border: none;
-    text-align: center;
+    padding: 7px 20px;
     display: inline-block;
     font-size: small;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo-wrapper #clear-button {
+    background-color: rgb(113, 202, 72);
+}
+
+.todo-wrapper #empty-button {
+    background-color: rgb(113, 202, 72);
+}
+
+.todo-wrapper #save-button {
+    background-color: rgb(113, 202, 72);
+}
+
+@media only screen and (min-width: 1400px) {
+    .todo-wrapper {
+        width: 50%;
+    }
+
+    .todo-wrapper input {
+        width: 600px;
+    }
+
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo-wrapper {
+        width: 75%;
+    }
+
+    .todo-wrapper input {
+        width: 400px;
+    }
 }
