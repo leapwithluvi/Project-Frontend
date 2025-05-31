@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Karakter Model Viewer - Luvi Aprilyansyah Gabriel</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">LuviDev</a>
+        <div class="toggle-menu" id="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="navbar-nav" id="navbar-nav">
+            <li><a href="" class="nav-link">Home</a></li>
+            <li><a href="" class="nav-link">About Me</a></li>
+            <li><a href="" class="nav-link">Project</a></li>
+            <li><a href="" class="nav-link">Sertifikat</a></li>
+            <li><a href="" class="nav-link-btn">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="content-model">
+        <div class="content">
+            <h1>Contoh Aja</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa harum nobis provident repellendus esse
+                quasi placeat ex excepturi praesentium pariatur sit, delectus, tempora quo veritatis error, illum
+                perferendis. Accusantium, veniam!</p> <br><hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa harum nobis provident repellendus esse
+                quasi placeat ex excepturi praesentium pariatur sit, delectus, tempora quo veritatis error, illum
+                perferendis. Accusantium, veniam!</p> <br><hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa harum nobis provident repellendus esse
+                quasi placeat ex excepturi praesentium pariatur sit, delectus, tempora quo veritatis error, illum
+                perferendis. Accusantium, veniam!</p> <br><hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa harum nobis provident repellendus esse
+                quasi placeat ex excepturi praesentium pariatur sit, delectus, tempora quo veritatis error, illum
+                perferendis. Accusantium, veniam!</p> <br><hr>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa harum nobis provident repellendus esse
+                quasi placeat ex excepturi praesentium pariatur sit, delectus, tempora quo veritatis error, illum
+                perferendis. Accusantium, veniam!</p><hr>
+        </div>
+        <div class="model3d">
+            <model-viewer class="rimuru" disable-zoom src="assets/3d-asset/rimuru_tempest_slime_statue.glb"
+                camera-orbit="45deg 55deg 4m" calc(0deg + env(window-scroll-y) * 180deg) calc(5m - env(window-scroll-y)
+                * 10m) auto-rotate shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+    </section>
+</body>
+<!-- js file -->
+<script src="assets/js/main.js"></script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+</html>
